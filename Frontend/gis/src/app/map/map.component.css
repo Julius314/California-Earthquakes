@@ -1,0 +1,302 @@
+
+
+#main {
+  width: 100%;
+  height: 100%;
+  
+}
+/* Earthquake Info box */
+.map-tooltip {
+  display: block;
+  background: rgba(10, 10, 10, 0.85); 
+  position: absolute;
+  z-index: 999;
+  transition: opacity ease-in-out .5s;
+  border-radius: 10px;
+  box-shadow: inset 0 0 4px 2px #b53f3f, 0px 0px 6px 0.25px #8e8e8e;
+  padding: 8px; 
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  color: white; /* color of text*/
+  text-align: center;
+  
+  
+}
+/*  <!-- Richter scale colors*/
+p#scale1{
+ 
+  width:12px;
+  height:12px;
+  font-size: 0.8em;
+  background-color: #598000;
+  text-indent: 30px;
+  white-space: nowrap;
+  font-weight: normal;
+  margin-left: 25%;
+  margin: 0;
+  padding: 0;
+  
+}
+p#scale2{
+ 
+  width:12px;
+  height:12px;
+  font-size: 0.8em;
+  background-color: #DEC800;
+  text-indent: 30px;
+  white-space: nowrap;
+  font-weight: normal;
+  margin-left: 25%;
+  margin: 0;
+  padding: 0;
+  
+}
+p#scale3{
+ 
+  width:12px;
+  height:12px;
+  font-size: 0.8em;
+  background-color: #ff7900;
+  text-indent: 30px;
+  white-space: nowrap;
+  font-weight: normal;
+  margin-left: 25%;
+  margin: 0;
+  padding: 0;
+}
+p#scale4{
+ 
+  width:12px;
+  height:12px;
+  font-size: 0.8em;
+  background-color: #ff4F00;
+  text-indent: 30px;
+  white-space: nowrap;
+  font-weight: normal;
+  margin-left: 25%;
+  margin: 0;
+  padding: 0;
+}
+p#scale5{
+ 
+  width:12px;
+  height:12px;
+  font-size: 0.8em;
+  background-color: #ff2F00;
+  text-indent: 30px;
+  white-space: nowrap;
+  font-weight: normal;
+  margin-left: 25%;
+  margin: 0;
+  padding: 0;
+}
+p#scale6{
+ 
+  width:12px;
+  height:12px;
+  font-size: 0.8em;
+  background-color: #ff0000;
+  text-indent: 30px;
+  white-space: nowrap;
+  font-weight: normal;
+  margin-left: 25%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* replace radio buttons with text buttons
+input[type="radio" i] {
+  opacity: 1;
+  position: fixed;
+  width: 1;
+}
+
+label {
+  display: inline-block;
+  background-color: red;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+
+input[type="radio" i]:checked + label {
+  background-color:blue;
+  border-color: #4c4;
+} 
+
+input[type="radio" i]:focus + label {
+  border: 2px dashed blue;
+}
+
+label:hover {
+  background-color: white;
+}
+*/
+
+#showButton:hover {
+  background-color: rgb(102, 255, 0);
+}
+
+#showButton{
+  background-color: rgb(29, 194, 29);
+  color: white;
+  border: #598000;
+  font-family: "Roboto",sans-serif;
+}
+
+#showButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+
+#tipinfo .head {
+  text-align: center;
+  padding: 5px;
+ 
+}
+
+span.cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+td.lftcol {
+  padding-right: 1em;
+  text-align: right;
+}
+td.rghtcol {
+  text-align: left;
+}
+/* Entire Tool bar */
+div#helping {
+  position: absolute;
+  z-index: 11111;
+  margin-top: 10px; /* margin*/
+  margin-left: 10px;
+  left: 10px;
+  width: 97%;
+  padding: 1vh 0;
+  text-align: center;
+  padding-bottom: 1em;
+  display: flex;
+  background: rgba(10, 10, 10, 0.85);
+  border-radius: 10px;
+  
+}
+
+div#filter{
+  width: 15%; 
+  padding: 0 1vw;
+}
+
+
+/* Label Text */
+div.sRow{
+  width: 100%;
+  padding-left: 5px;
+  display: flex;
+  justify-content: flex-end; /* end */
+  color: white;
+  font-family: "Roboto",sans-serif;
+  font-weight: bold;
+  
+}
+/* Input Text*/
+input.inp{
+  width: 40px; /* 40px*/
+  margin-left: 0.5em;
+  text-align: center;
+  border-color: rgb(66, 64, 64,0.82);
+  color: white;
+  font-family: "Roboto",sans-serif;
+  background: rgb(66, 64, 64,0.82);
+  border-radius: 11px; /* 10px*/
+}
+
+/*container right side */
+div#colorSelect {
+  
+  width: 12%; /* 12*/
+  padding: 0 1vw; 
+  color: white;
+  font-weight: bold;
+  
+  
+}
+
+/*container radio buttons */
+div#colRad {
+  width:35%;
+  display: flex;
+  font-size: 0.8em;
+  /*padding: 0.8em 10%; */
+  padding: 5 1vw; 
+  padding-top: 15px;
+  
+  
+  
+}
+img#magnitudepic{
+  width: 50%;
+  height: 20px;
+  background-color: white;
+}
+
+
+/*Zoom in/out leaflet button */
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+  margin-top: 25vh; /* 17vh*/ 
+  margin-left: 20px;
+}
+a.leaflet-control-zoom-in { background-color: rgba(10, 10, 10, 0.85); color: white; }
+a.leaflet-control-zoom-out { background-color: rgba(10, 10, 10, 0.85); color: white; }
+
+
+/* layer control button*/
+.leaflet-control-layers.leaflet-control {
+  margin-top: 25vh;
+  background-color: rgba(10, 10, 10, 0.85);
+  color: white;
+  margin-right: 20px;
+}
+
+
+
+
+.leaflet-interactive{
+  transition: fill ease-in-out .5s ;
+  transition: stroke ease-in-out .5s ;
+  
+
+}
+
+.clCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background: white;
+}
+
+.gruen {
+  background: radial-gradient(#598000 50%, transparent 70%);
+}
+
+.gelb {
+  background: radial-gradient(#DEC800 50%, transparent 70%);
+}
+
+.orange {
+  background: radial-gradient(#ff7900 50%, transparent 70%);
+}
+
+.rot {
+  background: radial-gradient(#ff2F00 50%, transparent 70%);
+}

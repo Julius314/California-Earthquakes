@@ -1,0 +1,8 @@
+Field Title,Field Name,Data Type,Description
+FIPS County Code,fips,Plain Text,"Assigned by the Census Bureau; ""6"" represents the state (California) and the remaining 3 digits correspond to the California county."
+County Name,county,Plain Text,Corresponds to FIPS County Code
+Projection year (day: July 1),year,Plain Text,Year of the population projection
+Age in years,age,Plain Text,Recoded exact age (completed years)
+Population - women,pop_female,Number,Population count - women
+Population - men,pop_male,Number,Population count - men
+Population - all persons,pop_total,Number,Population count - all persons
